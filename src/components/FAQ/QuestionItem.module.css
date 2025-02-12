@@ -1,0 +1,87 @@
+.containerQuestionItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerQuestionItem p {
+  color: black;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s, opacity 0.5s, padding 0.5s;
+}
+
+#activeParagraph {
+  opacity: 1;
+  padding: 20px 30px;
+}
+
+.containerQuestionItem button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s, background-color 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 14px 30px;
+  border-color: transparent;
+}
+
+.containerQuestionItem > p > a {
+  color: var(--secondary-color);
+}
+
+.containerQuestionItem > p > a:hover {
+  color: var(--primary-color);
+}
+
+
+.containerQuestionItem svg {
+  pointer-events: none;
+  padding: 2px;
+  transition: fill 0.3s, transform 0.3s;
+}
+
+.containerQuestionItem button:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.containerQuestionItem button:hover svg{
+  fill: white;
+}
+
+.activeButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.activeButton svg {
+  transform: rotate(180deg);
+  fill: white;
+}
+
+@media (max-width: 1024px) {
+  .containerQuestionItem button {
+    padding: 8px 10px;
+    gap: 10px;
+  }
+  .containerQuestionItem svg {
+    padding: 5px;
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerQuestionItem button {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+  .containerQuestionItem svg {
+    padding: 0;
+    width: 10%;
+  }
+}

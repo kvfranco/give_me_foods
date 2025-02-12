@@ -1,0 +1,46 @@
+.containerCompanyNumbers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1200px;
+  gap: 50px;
+  padding: 100px 40px 0 40px;
+}
+
+.containerCompanyNumbers > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.paragraph {
+  font-family: 'Chau Philomene One', serif;
+  font-size: 55px;
+  line-height: 55px;
+  letter-spacing: -2px;
+}
+
+.paragraph::after {
+  content: '+';
+}
+
+@media (max-width: 1024px) {
+  .containerCompanyNumbers {
+    padding: 250px 40px 0 40px;
+  }
+  .containerCompanyNumbers {
+    justify-content: center;
+  }
+  .containerCompanyNumbers > div > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .paragraph {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

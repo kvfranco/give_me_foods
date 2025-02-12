@@ -1,0 +1,32 @@
+.containerQuestions {
+  background-color: #e7e7e7;
+}
+
+#containerLimitWidth {
+  gap: 40px;
+  padding: 40px;
+}
+
+.containerLeftColumn, 
+.containerRightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+  #containerLimitWidth {
+    padding: 45px 20px 20px 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .containerLeftColumn,
+  .containerRightColumn {
+    width: 100%;
+    margin: 0;
+  }
+}

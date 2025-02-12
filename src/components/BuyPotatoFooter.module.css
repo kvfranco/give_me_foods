@@ -1,0 +1,58 @@
+.containerFooterBuyPotato {
+  background-color: var(--tertiary-color);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#containerLimitWidth {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10em 40px 5em 40px;
+}
+
+.containerText {
+  width: 30%;
+  padding: 20px 0;
+  color: black;
+}
+
+.containerText button {
+  transition: color 0.3s, background-color 0.3s;
+  margin-top: 20px;
+}
+
+.containerText button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.containerText button > svg {
+  transition: stroke 0.3s;
+}
+
+.containerText button:hover > svg {
+  stroke: white;
+}
+
+@media (max-width: 1024px) {
+  .containerFooterBuyPotato {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .containerText {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerFooterBuyPotato {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .containerText {
+    width: 100%;
+  }
+}

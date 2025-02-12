@@ -1,0 +1,35 @@
+.containerContactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--tertiary-color);
+  padding: 30px;
+  border-radius: 10px;
+  flex-shrink: 1;
+}
+
+.containerContactItem a {
+  font-family: 'Didact Gothic', serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27.5px;
+  color: #000000E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.containerContactItem span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerContactItem svg {
+  fill: black;
+  height: 30px;
+  width: 30px;
+}

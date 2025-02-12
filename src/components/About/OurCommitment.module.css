@@ -1,0 +1,73 @@
+.containerOurCommitment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0px 40px 100px 40px;
+  gap: 30px;
+}
+
+.containerOurCommitment {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerOurCommitment picture {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.containerOurCommitment img {
+  /*
+  width: 530px;
+  height: 530px; */
+  max-width: 85%;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 45%;
+}
+
+.containerText li {
+  font-size: 17px;
+  line-height: 25.5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.containerImage {
+  width: 55%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerOurCommitment {
+    padding: 20px 40px 100px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerOurCommitment {
+    flex-direction: column-reverse;
+  }
+  .containerOurCommitment picture {
+    justify-content: center;
+  }
+  .containerImage, .containerText {
+    width: 100%;
+  }
+  .containerOurCommitment img {
+    max-width: 80%;
+  }
+}

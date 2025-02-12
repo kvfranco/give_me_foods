@@ -1,0 +1,50 @@
+.containerPotatoType {
+  display: flex;
+  flex-shrink: 1;
+  height: 450px;
+  max-width: 450px;
+  padding: 60px 40px 0px 40px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerPotatoInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.containerPotatoInfo h3 {
+  padding-bottom: 20px;
+}
+
+.containerPotatoBuy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 50%;
+}
+
+.containerPotatoBuy button {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.containerPotatoBuy button:hover {
+  background-color: var(--tertiary-color);
+  transform: scale(0.9);
+}
+
+
+@media (max-width: 768px) {
+  .containerPotatoType {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .containerPotatoBuy {
+    justify-content: flex-start;
+  }
+}

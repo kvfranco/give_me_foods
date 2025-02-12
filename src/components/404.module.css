@@ -1,0 +1,31 @@
+.container404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  gap: 70px;
+  color: white;
+}
+
+.container404 h1 {
+  font-size: 150px;
+}
+
+.container404 p {
+  font-size: 50px;
+}
+
+.container404 a {
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.container404 a:hover {
+  color: black;
+  background-color: var(--secondary-color);
+}
