@@ -34,7 +34,8 @@ export default function PotatoIngredients() {
               <img
                 src={ingredientImgJpg}
                 alt="Image containing some cooking ingredients."
-                loading='lazy'
+                width="500"
+                height="500"
               />
             </picture>
           </div>

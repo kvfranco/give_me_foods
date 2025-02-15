@@ -30,7 +30,7 @@ Este repositório contém o código-fonte do site **Give Me Foods**, desenvolvid
 
    ```bash
    git clone https://github.com/kvfranco/give_me_foods.git
-   cd give-me-foods
+   cd give_me_foods
    ```
 
 2. Instale as dependências:

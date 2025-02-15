@@ -1,4 +1,7 @@
 import styles from "./OurCommitment.module.css";
+
+import dishWithPotatoesImgMobileJpg from '../../assets/images/aboutus-dish-with-potatoes-mobile.jpg';
+import dishWithPotatoesImgMobileWebp from '../../assets/images/aboutus-dish-with-potatoes-mobile.webp';
 import dishWithPotatoesImgJpg from '../../assets/images/aboutus-dish-with-potatoes.jpg';
 import dishWithPotatoesImgWebp from '../../assets/images/aboutus-dish-with-potatoes.webp';
 
@@ -37,11 +40,14 @@ export default function OurCommitment() {
       </div>
       <div className={styles.containerImage}>
         <picture>
+          <source srcSet={dishWithPotatoesImgMobileWebp} type="image/webp" media="(max-width: 500px)" />
+          <source srcSet={dishWithPotatoesImgMobileJpg} type="image/jpeg" media="(max-width: 500px)" />
           <source srcSet={dishWithPotatoesImgWebp} type="image/webp" />
           <img
             src={dishWithPotatoesImgJpg}
             alt="Dish served with crispy shoestring potatoes"
-            loading='lazy'
+            width="600"
+            height="600"
           />
         </picture>
       </div>

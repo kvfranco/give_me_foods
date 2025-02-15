@@ -1,4 +1,5 @@
 import styles from "./Presentation.module.css";
+import packageImgMobilePng from "../../assets/images/product-package-mobile.png";
 import packageImgWebp from "../../assets/images/product-package.webp";
 import packageImgPng from "../../assets/images/product-package.png";
 
@@ -19,10 +20,14 @@ export default function Presentation() {
         </div>
         <div className={styles.containerImage}>
           <picture>
+            <source srcSet="./product-package-mobile.webp" type="image/webp" media="(max-width: 500px)" />
+            <source srcSet={packageImgMobilePng} type="image/png" media="(max-width: 500px)" />
             <source srcSet={packageImgWebp} type="image/webp" />
             <img
               src={packageImgPng}
               alt="Give Me Foods Potato Chips Packaging"
+              width="737"
+              height="737"
             />
           </picture>
         </div>

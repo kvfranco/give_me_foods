@@ -1,6 +1,6 @@
 import HeroTop from "../components/HeroTop";
 import Questions from "../components/FAQ/Questions";
-import FAQContextProvider from "../components/FAQquestionsProvider";
+import FAQContextProvider from "../components/FAQContextProvider";
 import LetsTalk from "../components/FAQ/LetsTalk";
 
 export default function FAQ() {

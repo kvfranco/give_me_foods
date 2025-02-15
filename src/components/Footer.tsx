@@ -19,7 +19,7 @@ export default function Footer() {
         className="containerLimitWidthGlobal"
         id={styles.containerLimitWidth}
       >
-        <div className={styles.linksContainer}>
+        <section className={styles.linksContainer}>
           <div>
             <Link to="." onClick={scrollToTop}>
               <img src={footerSiteLogoImgPng} alt="Give Me Foods Footer Logo" />
@@ -27,7 +27,7 @@ export default function Footer() {
             <p>Bringing Brazil's crunch to every bite!</p>
           </div>
           <div>
-            <h4>About</h4>
+            <h2>About</h2>
             <nav>
               <ul>
                 <li><Link to="." onClick={scrollToTop}>Product</Link></li>
@@ -39,7 +39,7 @@ export default function Footer() {
             </nav>
           </div>
           <div>
-            <h4>Link</h4>
+            <h2>Link</h2>
             <nav>
               <ul>
                 <li><a href="https://www.instagram.com/giveme.foods/" target='_blank'>Follow Us</a></li>
@@ -50,16 +50,16 @@ export default function Footer() {
             </nav>
           </div>
           <div>
-            <h4>Let's Talk</h4>
+            <h2>Let's Talk</h2>
             <a href="tel:+447878111754" className={styles.phoneAndEmail}><PhoneCallIcon />+44 7878 111754</a>
             <a href="mailto:info@givemefoods.co.uk" className={styles.phoneAndEmail}><EnvelopeIcon />info@givemefoods.co.uk</a>
           </div>
-        </div>
+        </section>
         <div className={styles.containerCopyAndSocialMedia}>
           <p>&copy; {year} - Give Me Foods</p>
           <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=100094377206544" target='_blank'><FacebookIcon /></a></li>
-            <li><a href="https://www.instagram.com/giveme.foods/" target='_blank'><InstagramIcon /></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100094377206544" target='_blank' aria-label="Give Me Foods Facebook"><FacebookIcon /></a></li>
+            <li><a href="https://www.instagram.com/giveme.foods/" target='_blank' aria-label="Give Me Foods Instagram"><InstagramIcon /></a></li>
           </ul>
         </div>
       </div>

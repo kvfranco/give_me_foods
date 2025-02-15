@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import FAQquestionsContext from "../../stores/FAQContext";
+import FAQContext from "../../stores/FAQContext";
 import DownArrowIcon from "../UI/DownArrowIcon";
 import styles from "./QuestionItem.module.css";
 
@@ -15,7 +15,7 @@ export default function QuestionItem({
   children,
 }: QuestionItemPropsType) {
   const { activeQuestionNumber, handleActiveQuestionNumber, height } =
-    useContext(FAQquestionsContext);
+    useContext(FAQContext);
 
   return (
     <div className={styles.containerQuestionItem}>
