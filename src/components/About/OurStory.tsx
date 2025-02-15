@@ -1,4 +1,7 @@
 import styles from "./OurStory.module.css";
+
+import giveMeFoodsPotatoesImgMobileJpg from '../../assets/images/aboutus-potatoes-give-me-foods-mobile.jpg';
+import giveMeFoodsPotatoesImgMobileWebp from '../../assets/images/aboutus-potatoes-give-me-foods-mobile.webp';
 import giveMeFoodsPotatoesImgJpg from '../../assets/images/aboutus-potatoes-give-me-foods.jpg';
 import giveMeFoodsPotatoesImgWebp from '../../assets/images/aboutus-potatoes-give-me-foods.webp';
 
@@ -7,10 +10,14 @@ export default function OurStory() {
     <div className={styles.containerOurStory}>
       <div className={styles.containerImage}>
         <picture>
+          <source srcSet={giveMeFoodsPotatoesImgMobileWebp} type="image/webp" media="(max-width: 500px)" />
+          <source srcSet={giveMeFoodsPotatoesImgMobileJpg} type="image/jpeg" media="(max-width: 500px)" />
           <source srcSet={giveMeFoodsPotatoesImgWebp} type="image/webp" />
           <img
             src={giveMeFoodsPotatoesImgJpg}
             alt="Container filled with crispy potato chips"
+            width="600"
+            height="600"
           />
         </picture>
       </div>

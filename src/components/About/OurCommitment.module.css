@@ -23,10 +23,8 @@
 }
 
 .containerOurCommitment img {
-  /*
-  width: 530px;
-  height: 530px; */
   max-width: 85%;
+  height: auto;
   border-radius: 50%;
   border: 10px solid white;
 }

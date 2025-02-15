@@ -3,9 +3,12 @@ import ContactItem from "../../components/Contact/ContactItem";
 import PhoneCallIcon from "../../components/UI/PhoneCallIcon";
 import EnvelopeIcon from "../../components/UI/EnvelopeIcon";
 import InstagramIcon from "../../components/UI/InstagramIcon";
+import ContactForm from "./ContactForm";
+
+import ContactHeroImgMobileJpg from "../../assets/images/contact-hero-mobile.jpg";
+import ContactHeroImgMobileWebp from "../../assets/images/contact-hero-mobile.webp";
 import ContactHeroImgJpg from "../../assets/images/contact-hero.jpg";
 import ContactHeroImgWebp from "../../assets/images/contact-hero.webp";
-import ContactForm from "./ContactForm";
 
 export default function ContactOptions() {
   return (
@@ -34,8 +37,10 @@ export default function ContactOptions() {
         <div className={styles.containerContactFormAndHero}>
           <div className={styles.containerHero}>
             <picture>
+              <source srcSet={ContactHeroImgMobileWebp} type="image/webp" media="(max-width: 500px)" />
+              <source srcSet={ContactHeroImgMobileJpg} type="image/jpeg" media="(max-width: 500px)" />
               <source srcSet={ContactHeroImgWebp} type="image/webp" />
-              <img src={ContactHeroImgJpg} alt="Give Me Foods Brand Banner" />
+              <img src={ContactHeroImgJpg} alt="Give Me Foods Brand Banner" width="717" height="717" />
             </picture>
           </div>
           <div className={styles.containerContactForm}>

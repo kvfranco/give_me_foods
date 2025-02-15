@@ -21,7 +21,7 @@
 }
 
 .containerHero img {
-  max-height: 691px;
+  height: auto;
   max-width: 513px;
   margin-bottom: -260px;
 }
@@ -44,8 +44,11 @@
     justify-content: center;
     gap: 20px;
   }  
+  .containerHero h1 {
+    font-size: 40px;
+  }
   .containerHero img {
-    width: 85%;
+    width: 90%;
     margin-bottom: -240px;
   }
 }
